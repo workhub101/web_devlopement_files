@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Survey Form</h3>
+    <p>Please answer the following questions:</p>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" required>
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required>
+            Gender:
+                <select name="Gender" id="Gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </selekct>
+
+        </fieldset>
+        <fieldset>
+            <legend>Multiple-Choice questions</legend>
+            <p>1.Which of the following pets do you own</p>
+                <input type="checkbox" name="pet" value="dog">
+                Dog/s <br>
+                <input type="checkbox" name="pet" value="Cats">
+                Cat/s <br>
+                <input type="checkbox" name="pet" value="Fish">
+                Bird/s <br>
+            
+            <p>2. Which of the following fruits do you like</p>
+            <label><input type="radio" name="fruit" value="Apple">Apple</label><br>
+            <label> <input type="radio" name="fruit" value="banana">Banana</label><br>
+            <label> <input type="radio" name="fruit" value="orange">Orange</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Open-Ended Questions</legend>
+            <label for="question">3.What do you like best about our service?</label><br>
+            <textarea name="question" id="question" rows="2" cols="25"></textarea> <br>
+            <label for="questions">4.What improvements would you suggest for our service?</label><br>
+            <textarea name="questions" id="questions" rows="2" cols="25"></textarea><br>
+            
+        </fieldset>
+        <button type="submit"
+        onclick="alert('Thank you for filling out this form')">Submit</button>
+    </form>
+</body>
+</html>

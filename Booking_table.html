@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .background-color{
+        background-color: gray;
+      }
+     .space_2{
+        padding-right: 2%;
+        padding-left: 2%;
+     }
+     .color{
+        color: white;
+     }
+     .left{
+      display: flex;
+        justify-content: left;
+     }
+     #Header{
+      font-size: 50px;
+     }
+     .word_color{
+      color:blue;
+     }
+      .side_bar_color{
+        background-color: lightskyblue;
+        font-size: 25px;
+      }
+      .width{
+        width: 150px;
+      }
+      #red{
+        color: red;
+      }
+      .space{
+        padding-right: 30%;
+        padding-left: 30%;
+      }
+      
+      
+      .right{
+        display: flex;
+        justify-content: right;
+      }
+      .center{
+        display: flex;
+        justify-content: center;
+      }
+
+
+    body,html{
+    height:100%;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+
+}
+.content{
+    flex: 1;
+
+}
+.table_header{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.width-100{
+  width: 100px;
+}
+.text-align{
+  text-align: center;
+}
+.bg-green{
+  background-color: green;
+}
+.bg-red{
+  background-color: red;
+}
+.height{
+  height: 70vh;
+}
+.online-button{
+  width: 250px;
+  ;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 50px;
+  color: green;
+}
+.icons_div{
+  display: flex;
+}
+   
+    </style>
+</head>
+<body>
+    <div class="background-color color ">
+      <span id="Header">T&V Lanka</span> <span class="space_2">Home</span><span class="space_2">Booking</span><span class="space_2">logout</span>
+      <span class="space_2">Profile</span><span class="space_2">Admin Dashboard</span>
+      <span class="space_2">Contact US</span><span class="space_2">About Us</span>
+      <label for="Search"></label>
+      <input type="text" id="Search" name="Search" placeholder="Search">
+    </div>
+  <div class="left">
+    <div class="left  side_bar_color width word_color height " >
+      <span>Notification</p>
+      <p>Message</p>
+      <p>Add Vehicle</p>
+      <p id="red">Booking</p>
+      <p>User</p>
+      <p>Vehicles</p>
+    </div>
+    <div class="space_2">
+    <h2>Booking Details</h2>
+    <table border="2" width="75%" class="" >
+      <tr bgcolor="green" class="color">
+        <th>User</th>
+        <th class="table_header">Start Date</th>
+        <th>End date</th>
+        <th>Pick Time</th>
+        <th>Package</th>
+        <th>Vehicle Catogory</th>
+        <th>No Vehicles</th>
+        <th>Book Date</th>
+        <th>Status</th>
+        <th class="width-100  text-align ">Confirm</th>
+        <th class="width-100 text-align">Delete</th>
+      </tr>
+      <tr>
+        <td>Shainee Delwita</td>
+        <td>2019-05-17</td>
+        <td>2019-05-23</td>
+        <td>11:59</td>
+        <td>daily</td>
+        <td>car</td>
+        <td>1</td>
+        <td>2019-05-21</td>
+        <td>Pending</td>
+        <td class="text-align"><input type="submit" value="Confirm" class=" color bg-green"></td>
+        <td class="text-align"><input type="submit" value="Delete" class=" color bg-red"></td>
+      </tr>
+      <tr>
+        <td>Shalnee Delwita</td>
+        <td>2019-05-18</td>
+        <td>2019-05-21</td>
+        <td>11:59</td>
+        <td>daily</td>
+        <td>van</td>
+        <td>2</td>
+        <td>2019-05-21</td>
+        <td>Pending</td>
+        <td class="text-align"><input type="submit"value="Confirm" class=" color bg-green"></td>
+        <td class="text-align"><input type="submit" value="Delete" class=" color bg-red"></td>
+      </tr>
+      <tr>
+        <td>Dewmal Fernando</td>
+        <td>2019-12-05</td>
+        <td>2019-12-05</td>
+        <td>04:00</td>
+        <td>daily</td>
+        <td>car</td>
+        <td>1</td>
+        <td>2019-05-21</td>
+        <td>Pending</td>
+        <td class="text-align"><input type="submit" value="Confirm" class="bg-green color"></td>
+        <td class="text-align"><input type="submit" value="Delete" class="bg-red color"></td>
+      </tr>
+    </table>
+   </div>
+
+  </div>
+  <div class="content"></div>
+  
+    <div class="color background-color footer">
+    
+      <div class="icons_div">
+        <div>Email:abc@gmail.com</div>
+        <div class="space"> @company name</div>
+        <div class="right">
+          <span><img src="./Images/download (1).png" alt="" width="15px" height="15px"></span>
+          <span><img src="./Images/instagram.jpg" alt="" width="15px" height="15px"></span>
+          <span><img src="./Images/x.jpg" alt="" width="15px" height="15px"></span>
+        </div>
+      </div>
+      <p>Telephone:011-2569875</p>
+      <p>Address:No 56,3rd lane, Colombo 3,</p>
+      <div class="right">
+        <input type="submit" value="Online"  class="online-button">
+      </div>
+    </div>
+  
+</body>
+</html>
